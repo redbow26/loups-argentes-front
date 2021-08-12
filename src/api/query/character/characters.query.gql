@@ -1,0 +1,26 @@
+query characters {
+    characters {
+        id
+        name
+        gameServer {
+            id
+            name
+        }
+        mainJob {
+            id
+            name
+        }
+        subJobs {
+            id
+            name
+        }
+        mainWeapon {
+            id
+            name
+        }
+        subWeapons {
+            id
+            name
+        }
+    }
+}

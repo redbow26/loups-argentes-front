@@ -1,0 +1,6 @@
+query job($id: Int!) {
+    job(id: $id) {
+        id
+        name
+    }
+}

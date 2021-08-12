@@ -1,0 +1,26 @@
+query character($id: Int!) {
+    character(id: $id) {
+        id
+        name
+        gameServer {
+            id
+            name
+        }
+        mainJob {
+            id
+            name
+        }
+        subJobs {
+            id
+            name
+        }
+        mainWeapon {
+            id
+            name
+        }
+        subWeapons {
+            id
+            name
+        }
+    }
+}

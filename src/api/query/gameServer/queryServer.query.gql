@@ -1,0 +1,6 @@
+query gameServer($id: Int!) {
+    gameServer(id: $id) {
+        id
+        name
+    }
+}

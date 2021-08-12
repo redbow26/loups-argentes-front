@@ -1,0 +1,13 @@
+mutation joinGroup(
+    $id: Int!
+    $characterId: Int!
+) {
+    joinGroup(joinGroupInput: {
+        id: $id
+        characterId: $characterId
+    }){
+        id
+        name
+        dueDate
+    }
+}
