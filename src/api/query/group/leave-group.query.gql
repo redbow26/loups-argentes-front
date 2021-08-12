@@ -1,0 +1,13 @@
+mutation leaveGroup(
+    $id: Int!
+    $characterId: Int!
+) {
+    leaveGroup(leaveGroupInput: {
+        id: $id
+        characterId: $characterId
+    }){
+        id
+        name
+        dueDate
+    }
+}

@@ -1,0 +1,47 @@
+mutation createGroup(
+    $name: String!
+    $description: String!
+    $dueDate: DateTime!
+    $activityId: Int!
+    $gameServerId: Int!
+) {
+    createGroup(createGroupInput: {
+        name: $name
+        description: $description
+        dueDate: $dueDate
+        activityId: $activityId
+        gameServerId: $gameServerId
+    }){
+        id
+        name
+        description
+        dueDate
+        gameServer {
+            id
+            name
+        }
+        activity {
+            id
+            name
+            description
+            maxPlayer
+            minPlayer
+        }
+        creator {
+            id
+            username
+        }
+        characters {
+            id
+            name
+            mainWeapon {
+                id
+                name
+            }
+            mainJob {
+                id
+                name
+            }
+        }
+    }
+}

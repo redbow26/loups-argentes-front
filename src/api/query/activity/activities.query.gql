@@ -1,0 +1,9 @@
+query activities {
+    activities {
+        id
+        name
+        description
+        minPlayer
+        maxPlayer
+    }
+}

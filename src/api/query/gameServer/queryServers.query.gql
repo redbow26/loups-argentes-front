@@ -1,0 +1,6 @@
+query gameServers {
+    gameServers {
+        id
+        name
+    }
+}

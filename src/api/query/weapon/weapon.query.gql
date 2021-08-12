@@ -1,0 +1,6 @@
+query weapon($id: Int!) {
+    weapon(id: $id) {
+        id
+        name
+    }
+}

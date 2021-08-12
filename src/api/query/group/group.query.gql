@@ -1,0 +1,35 @@
+query group($id: Int!) {
+    group(id: $id) {
+        id
+        name
+        description
+        dueDate
+        gameServer {
+            id
+            name
+        }
+        activity {
+            id
+            name
+            description
+            maxPlayer
+            minPlayer
+        }
+        creator {
+            id
+            username
+        }
+        characters {
+            id
+            name
+            mainWeapon {
+                id
+                name
+            }
+            mainJob {
+                id
+                name
+            }
+        }
+    }
+}

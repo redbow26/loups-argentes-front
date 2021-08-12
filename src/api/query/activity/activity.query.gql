@@ -1,0 +1,9 @@
+query activity($id: Int!) {
+    activity(id: $id) {
+        id
+        name
+        description
+        minPlayer
+        maxPlayer
+    }
+}

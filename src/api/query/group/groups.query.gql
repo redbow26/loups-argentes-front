@@ -1,0 +1,39 @@
+query groups {
+    groups {
+        id
+        name
+        description
+        dueDate
+        gameServer {
+            id
+            name
+        }
+        activity {
+            id
+            name
+            description
+            maxPlayer
+            minPlayer
+        }
+        creator {
+            id
+            username
+        }
+        characters {
+            id
+            name
+            mainWeapon {
+                id
+                name
+            }
+            mainJob {
+                id
+                name
+            }
+            user {
+                id
+                username
+            }
+        }
+    }
+}
